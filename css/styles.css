@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #626262;
+    margin: 0;
+    padding: 0;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+inpurt[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+main.container {
+    padding-bottom: 70px;
+}
+/* navigation */
+.header {
+    margin-bottom: 26px;
+}
+.nav-list {
+    list-style: none;
+        margin: 0;
+        padding: 0;
+    text-align: center;
+    padding: 72px 0;
+}
+.nav-list-item {
+    display: inline-block;
+}
+.nav-link {
+    padding: 0 64px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+}
+.nav-link:focus,
+.nav-link:hover {
+    color: #03a9f4;
+}
+/* sections */
+section {
+    margin-bottom: 134px;
+}
+section:last-of-type {
+    margin-bottom: 52px;
+}
+.article-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.article {
+    vertical-align: top;
+    display: inline-block;
+    width: 420px;
+    margin-bottom: 60px;
+}
+.article:not(:nth-child(2n)) {
+    margin-right: 60px;
+}
+.article:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+.article-img {
+    margin-bottom: 32px;
+}
+.section-heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    /* line-height: 1.2; */
+    font-weight: 300;
+    color: #b4ad9e;
+    margin: 0 0 28px;
+    text-transform: uppercase;
+}
+.article-heading {
+font-size: 30px;
+        /* line-height: 1.2; */
+        margin: 0 0 36px;
+    }
+.article-text {
+    margin: 0;padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* button */
+.button {
+    font-size: 20px;
+    border: 1px solid rgb(98, 98, 98);
+    padding: 20px 34px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #626262;
+    background-color: #fff;
+    /* margin-bottom: 70px; */
+}
+.button:hover, 
+.button:focus {
+    border-color: #03a9f4;
+    color: #03a9f4;
+}
